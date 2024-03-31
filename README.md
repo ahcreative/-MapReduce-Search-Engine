@@ -47,3 +47,28 @@ In this part of the assignment, we perform preprocessing on the dataset to prepa
 5. **Stemming and Lemmatization:** We apply stemming and lemmatization techniques to reduce words to their root forms, improving the efficiency of the search engine.
 
 6. **Saving Preprocessed Data:** The preprocessed data is saved to a new CSV file for further processing.
+
+Sure, I've added the `reducer3.py` file to the README.
+
+# Part 2 Mapper and Reducer
+
+This repository contains Python scripts for implementing the Map-Reduce approach for creating an inverted index. The inverted index is a data structure used in information retrieval systems to facilitate efficient text search operations.
+
+## Overview
+
+The Map-Reduce approach consists of two main phases: the Map phase and the Reduce phase. In the Map phase, the input data is processed and transformed into intermediate key-value pairs. In the Reduce phase, these intermediate key-value pairs are aggregated and combined to produce the final output.
+
+This repository contains the following scripts:
+
+1. `mapper1.py`: This script implements the Map phase of the first step. It tokenizes the input documents, counts the frequency of each word in each document, and emits intermediate key-value pairs of the form `(word, docID)`.
+
+2. `reducer1.py`: This script implements the Reduce phase of the first step. It takes the intermediate key-value pairs from the Map phase and calculates the term frequency (TF) for each word in each document. It then emits intermediate key-value pairs of the form `(word, (docID, TF))`.
+
+3. `mapper2.py`: This script implements the Map phase of the second step. It takes the intermediate key-value pairs from the first Reduce phase and calculates the inverse document frequency (IDF) for each word. It then emits intermediate key-value pairs of the form `(word, (docID, TF, IDF))`.
+
+4. `reducer2.py`: This script implements the Reduce phase of the second step. It takes the intermediate key-value pairs from the second Map phase and aggregates the TF/IDF scores for each term in each document. It then outputs the final index entries for each term, containing the TF/IDF scores and document IDs.
+
+5. `mapper3.py`: This script is an example of how to load and tokenize the input data (queries) for the information retrieval system.
+
+6. `reducer3.py`: This script calculates the inverse document frequency (IDF) for each term in the preprocessed data. It then combines the term frequencies (TF) and IDF values to represent each document with its term frequencies. This can be used for further processing or ranking in the information retrieval system.
+
