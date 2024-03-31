@@ -71,3 +71,16 @@ This repository contains the following scripts:
 
 6. `reducer3.py`: This script calculates the inverse document frequency (IDF) for each term in the preprocessed data. It then combines the term frequencies (TF) and IDF values to represent each document with its term frequencies. This can be used for further processing or ranking in the information retrieval system.
 
+7. `IDF File (idf.txt):`
+   - This file contains the inverse document frequency (IDF) values calculated for each term in the dataset. IDF values are essential for determining the importance of terms in the search engine's indexing and query processing.
+
+8. `TF File (tf.txt):`
+   - The TF file contains the term frequency (TF) values calculated for each term in each document. TF values represent the frequency of occurrence of each term within a document and play a crucial role in relevance calculation.
+
+9. `Term IDF File (term_idf.txt):`
+   - This file stores the term frequency-inverse document frequency (TF-IDF) scores for each term in each document. TF-IDF scores combine the TF and IDF values to measure the importance of a term in a document relative to the entire dataset.
+
+10. `Query File (query.txt):`
+    - The query file contains queries that can be used to test the search engine. Each query is provided in a separate line, and the search engine can process these queries to retrieve relevant documents based on their content.
+
+
