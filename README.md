@@ -48,11 +48,10 @@ In this part of the assignment, we perform preprocessing on the dataset to prepa
 
 6. **Saving Preprocessed Data:** The preprocessed data is saved to a new CSV file for further processing.
 
-Sure, I've added the `reducer3.py` file to the README.
 
 # Part 2 Mapper and Reducer
 
-This repository contains Python scripts for implementing the Map-Reduce approach for creating an inverted index. The inverted index is a data structure used in information retrieval systems to facilitate efficient text search operations.
+This part contains Python scripts for implementing the Map-Reduce approach for creating an inverted index. The inverted index is a data structure used in information retrieval systems to facilitate efficient text search operations.
 
 ## Overview
 
